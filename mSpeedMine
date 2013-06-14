@@ -1,0 +1,17 @@
+@EventHandler
+
+public void SpeedMine(PlayerInteractEvent event) {
+
+  Player p = event.getPlayer();
+
+  if(Miner(p)) {
+  
+  if(p.getItemInHand().getType() == Material.DIAMOND_PICKAXE && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
+  
+  p.addPotionEffect(newPotionEffect(PotionEffectType.FAST_DIGGING, 140, 0));
+  
+  }
+  
+  }
+  
+}
