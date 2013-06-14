@@ -1,0 +1,13 @@
+public void Miner(Player player) {
+
+int h = playerInventory.getHelm().getTypeId();
+int c = playerInventory.getChestPlate().getTypeId();
+int l = playerInventory.getLeggings().getTypeId();
+int b = playerInventory.getBoots().getTypeId();
+
+    if(h == 306 && c == 307 && l == 308 && b == 309) {
+    
+    }
+
+}
+
